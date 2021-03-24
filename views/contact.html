@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="../Styles/contact.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <div class="socialMedia">
+    <a
+      href="https://www.linkedin.com/in/andrei-sbirciog-128a7018a/"
+      target="_blank"
+    >
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/xandrei08" target="_blank">
+      <i class="fab fa-github"></i
+    ></a>
+  </div>
+  <body>
+    <nav id="navC">
+      <a class="navL" href="../views/index.html">Home</a>
+      <a class="navL" href="../views/about.html">About</a>
+      <a class="navL" href="../views/portfolio.html">Showcase</a>
+      <a class="navL" href="../views/contact.html">Contact</a>
+    </nav>
+    <div id="platforms">
+      <h1>Skype id: xandreis93@gmail.com</h1>
+      <h1>Zoom id: xandreix93@gmail.com</h1>
+    </div>
+    <div class="contactMe">
+      <h1 id="firstH">Contact Me</h1>
+    </div>
+    <div class="mainContent">
+      <div class="bookMe">
+        <form class="contact-form" id="contactForm">
+          <label for="firstName">
+            First Name <br />
+            <input type="text" id="firstName" required /> </label
+          ><br /><br />
+          <label for="lastName">
+            Last Name <br />
+            <input type="text" id="lastName" required /> </label
+          ><br /><br />
+          <label for="company"
+            >Company <br />
+            <input type="text" id="company" required />
+          </label>
+          <br /><br />
+          <label for="date">
+            Select date <br />
+            <input type="date" id="date" required /> </label
+          ><br /><br />
+          <label for="time"
+            >Time <br />
+            <input type="time" id="time" required />
+          </label>
+          <h4 id="secondH">Book an interview</h4>
+          <br /><br />
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="cards">
+        <div id="card1">
+          <h2 id="cardsHeader">What's Next?</h2>
+          <p id="p1">
+            First of all i would like to thank you for visiting my portfolio. If
+            you booked me through that form please take in consideration that is
+            an online interview.
+          </p>
+        </div>
+        <div id="card2">
+          <h3 id="cardsHeader2">Prefer to call?</h3>
+          <p id="p2">
+            Ro Mobile: +40 758718999 <br />
+            UK Mobile: +44 7424131617
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p id="footer">
+        Programmed By:
+        <span class="extra">Andrei Sbirciog / xandreix93@gmail.com</span>
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="../JS.files/contact.js"></script>
+    <script type="module" src="../JS.files/contactForm.js"></script>
+  </body>
+</html>

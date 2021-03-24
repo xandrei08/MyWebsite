@@ -1,0 +1,595 @@
+body {
+  height: 100vh;
+
+  font-family: "Fira Sans", sans-serif;
+  background: rgb(84, 71, 71);
+  background: radial-gradient(
+    circle,
+    rgba(84, 71, 71, 1) 0%,
+    rgba(8, 0, 0, 1) 100%
+  );
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/*Social Media */
+.socialMedia {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  font-size: calc(20px + 0.5em);
+}
+
+.socialMedia a {
+  color: #fff;
+  text-decoration: none;
+}
+/* navbar design */
+#navC {
+  position: fixed;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  left: 2.5%;
+  bottom: 5vh;
+  z-index: 1;
+}
+.navL {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5em;
+  font-size: calc(16px + 0.1em);
+  font-weight: 600;
+}
+a.navL:hover {
+  transform: translateY(-12%);
+  transition: all 0.4s ease-in-out;
+}
+/* Projects Letters */
+#projects {
+  position: fixed;
+  width: 10vw;
+}
+#hP {
+  position: absolute;
+  left: 52.5vw;
+  top: 5.2vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hR {
+  position: absolute;
+  left: 52.5vw;
+  top: 16vh;
+  font-size: calc(30px + 1em);
+  animation: pO 0.2s 1;
+  opacity: 0;
+}
+#hO {
+  position: absolute;
+  left: 52.5vw;
+  top: 26vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hJ {
+  position: absolute;
+  left: 52.5vw;
+  top: 36vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hE {
+  position: absolute;
+  left: 52.5vw;
+  top: 46vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hC {
+  position: absolute;
+  left: 52.5vw;
+  top: 56vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hT {
+  position: absolute;
+  left: 52.5vw;
+  top: 66vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hS {
+  position: absolute;
+  left: 52.5vw;
+  top: 76vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+/* Div Slides */
+.wrapper {
+  width: 300vw;
+  height: 100vh;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+/* cards  & card1  & slide1*/
+#card1 {
+  display: grid;
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  top: 7vh;
+  left: 15vw;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card1 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p1 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p2 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p3 {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn1 {
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#btn:hover {
+  cursor: pointer;
+}
+#git {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+/* card2 */
+#card2 {
+  display: grid;
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  bottom: 11vh;
+  left: 15vw;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card2 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p4 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p5 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p6 {
+  position: absolute;
+  bottom: 24%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn2 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#btn2:hover {
+  cursor: pointer;
+}
+#git2 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+/* card3 */
+#card3 {
+  display: grid;
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  bottom: 11vh;
+  right: 8vw;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card3 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p7 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p8 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p9 {
+  position: absolute;
+  bottom: 24%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn3 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#btn3 {
+  cursor: pointer;
+}
+#git3 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+#card4 {
+  display: grid;
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  top: 7vh;
+  right: 8vw;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card4 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p10 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p11 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p12 {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn4 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git4 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+
+/* Slide 2 */
+
+#two {
+  position: absolute;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*card 5*/
+#card5 {
+  position: absolute;
+  display: grid;
+  width: 30vw;
+  height: 35vh;
+  top: 7vh;
+  left: 15%;
+  top: 7vh;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card5 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p13 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p14 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p15 {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn5 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git5 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+/* card6 */
+#card6 {
+  position: absolute;
+  display: grid;
+  width: 30vw;
+  height: 35vh;
+  top: 7vh;
+  right: 9%;
+  top: 7vh;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card6 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p16 {
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p17 {
+  position: absolute;
+  top: 8%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p18 {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn6 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git6 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+
+/* card 7 */
+
+#card7 {
+  position: absolute;
+  display: grid;
+  bottom: 10vh;
+  right: 9vw;
+  width: 30vw;
+  height: 35vh;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card7 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p19 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p20 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p21 {
+  position: absolute;
+  bottom: 24%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn7 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git7 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+/* Card 8 */
+
+#card8 {
+  position: absolute;
+  display: grid;
+  bottom: 10vh;
+  left: 15vw;
+  width: 30vw;
+  height: 35vh;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card8 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p22 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p23 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p24 {
+  position: absolute;
+  bottom: 28%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn8 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git8 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+
+/* Footer */
+
+footer > p {
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+  color: #fff;
+  display: flixed;
+}
+.extra {
+  position: absolute;
+  right: -83vw;
+  display: none;
+  cursor: pointer;
+}
+
+footer > p:hover .extra {
+  display: inline-block;
+}

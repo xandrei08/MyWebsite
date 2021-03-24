@@ -1,0 +1,225 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Fira Sans", sans-serif;
+  background: rgb(84, 71, 71);
+  background: radial-gradient(
+    circle,
+    rgba(84, 71, 71, 1) 0%,
+    rgba(8, 0, 0, 1) 100%
+  );
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* social media */
+.socialMedia {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  font-size: calc(20px + 0.5em);
+}
+
+.socialMedia a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Navbar css */
+#navC {
+  position: fixed;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  left: 2.5%;
+  bottom: 5vh;
+}
+.navL {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5em;
+  font-size: calc(16px + 0.1em);
+  font-weight: 600;
+}
+a.navL:hover {
+  transform: translateY(-12%);
+  transition: all 0.4s ease-in-out;
+}
+/*platforsm to attend the interview */
+#platforms {
+  color: #fff;
+  position: absolute;
+  bottom: 11%;
+  right: 30%;
+  opacity: 0;
+}
+#platforms > h1 {
+  font-size: calc(12px + 0.3em);
+}
+
+/*Main content of contacts */
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+.interview {
+  opacity: 0;
+}
+.contactMe {
+  position: absolute;
+  left: 46%;
+  top: 5%;
+  text-align: center;
+  width: 10vw;
+}
+#firstH {
+  color: #fff;
+  font-size: calc(25px + 0.1em);
+  font-weight: 700;
+}
+/* Book an Interview */
+.bookMe {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: calc(16px + 0.2em);
+  color: #fff;
+}
+#secondH {
+  position: absolute;
+  left: 25%;
+  top: 67.5%;
+  color: lightpink;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  font-size: calc(22px + 0.5em);
+  animation: secondH 1.2s 1;
+}
+@keyframes secondH {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 0 0;
+    color: #fff;
+  }
+  50% {
+    transform: scale(0.3);
+    color: #fff;
+  }
+  100% {
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    color: lightpink;
+  }
+}
+#firstName {
+  width: 22vw;
+  height: 3.5vh;
+}
+#lastName {
+  width: 22vw;
+  height: 3.5vh;
+}
+#emailAddress {
+  width: 22vw;
+  height: 3.5vh;
+}
+#company {
+  width: 22vw;
+  height: 3.5vh;
+}
+#date {
+  width: 22vw;
+  height: 3.5vh;
+}
+#time {
+  width: 22vw;
+  height: 3.5vh;
+}
+#submit {
+  position: absolute;
+  left: 34.7%;
+  width: 9vw;
+  height: 5vh;
+  font-size: calc(12px + 0.4em);
+  background-color: transparent;
+  color: #fff;
+  border: 3px double;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#submit:hover {
+  transform: scale(1.3);
+  background-color: lightpink;
+  color: #000;
+}
+/* Cards Style */
+#card1 {
+  display: grid;
+  position: absolute;
+  top: 26%;
+  right: 26%;
+  color: #fff;
+  width: 22vw;
+  height: 23vh;
+  text-align: center;
+  font-size: calc(12px + 0.4em);
+  border: 5px double #fff;
+  opacity: 0;
+}
+#cardsHeader {
+  position: absolute;
+  top: -10%;
+  left: 27%;
+}
+#p1 {
+  position: absolute;
+  bottom: 0%;
+  color: #fff;
+  padding: 0 1em;
+}
+#card2 {
+  display: grid;
+  position: absolute;
+  bottom: 24%;
+  right: 26%;
+  color: #fff;
+  width: 22vw;
+  height: 23vh;
+  font-size: calc(15px + 0.4em);
+  border: 4px double lightskyblue;
+  opacity: 0;
+  padding: 0;
+  line-height: 2em;
+}
+#cardsHeader2 {
+  position: absolute;
+  top: -7%;
+  left: 27%;
+}
+#p2 {
+  position: absolute;
+  left: 15%;
+  bottom: 5%;
+}
+#p2:hover {
+  cursor: zoom;
+}
+/*Footer */
+footer > p {
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+  color: #fff;
+}
+.extra {
+  position: absolute;
+  right: -83vw;
+  display: none;
+  cursor: pointer;
+}
+
+footer > p:hover .extra {
+  display: inline-block;
+}
