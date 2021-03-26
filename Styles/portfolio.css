@@ -1,0 +1,1603 @@
+body {
+  height: 100vh;
+
+  font-family: "Fira Sans", sans-serif;
+  background: rgb(84, 71, 71);
+  background: radial-gradient(
+    circle,
+    rgba(84, 71, 71, 1) 0%,
+    rgba(8, 0, 0, 1) 100%
+  );
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+/*Social Media */
+.socialMedia {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  font-size: calc(20px + 0.5em);
+}
+
+.socialMedia a {
+  color: #fff;
+  text-decoration: none;
+}
+/* navbar design */
+#navC {
+  position: fixed;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  left: 2.5%;
+  bottom: 5vh;
+  z-index: 1;
+}
+.navL {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5em;
+  font-size: calc(16px + 0.1em);
+  font-weight: 600;
+}
+a.navL:hover {
+  transform: translateY(-12%);
+  transition: all 0.4s ease-in-out;
+}
+/* Projects Letters */
+#projects {
+  position: fixed;
+  width: 10vw;
+}
+#hP {
+  position: absolute;
+  left: 52.5vw;
+  top: 5.2vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hR {
+  position: absolute;
+  left: 52.5vw;
+  top: 16vh;
+  font-size: calc(30px + 1em);
+  animation: pO 0.2s 1;
+  opacity: 0;
+}
+#hO {
+  position: absolute;
+  left: 52.5vw;
+  top: 26vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hJ {
+  position: absolute;
+  left: 52.5vw;
+  top: 36vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hE {
+  position: absolute;
+  left: 52.5vw;
+  top: 46vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hC {
+  position: absolute;
+  left: 52.5vw;
+  top: 56vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hT {
+  position: absolute;
+  left: 52.5vw;
+  top: 66vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+#hS {
+  position: absolute;
+  left: 52.5vw;
+  top: 76vh;
+  font-size: calc(30px + 1em);
+  opacity: 0;
+}
+/* Div Slides */
+.wrapper {
+  width: 300vw;
+  height: 100vh;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+/* cards  & card1  & slide1*/
+#card1 {
+  display: grid;
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  top: 7vh;
+  left: 15vw;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card1 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p1 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p2 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p3 {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn1 {
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#btn:hover {
+  cursor: pointer;
+}
+#git {
+  position: absolute;
+  bottom: 2%;
+  right: 4%;
+  color: #fff;
+}
+/* card2 */
+#card2 {
+  display: grid;
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  bottom: 11vh;
+  left: 15vw;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card2 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p4 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p5 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p6 {
+  position: absolute;
+  bottom: 24%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn2 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#btn2:hover {
+  cursor: pointer;
+}
+#git2 {
+  position: absolute;
+  bottom: 6%;
+  right: 4%;
+  color: #fff;
+}
+/* card3 */
+#card3 {
+  display: grid;
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  bottom: 11vh;
+  right: 8vw;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card3 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p7 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p8 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p9 {
+  position: absolute;
+  bottom: 24%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn3 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#btn3 {
+  cursor: pointer;
+}
+#git3 {
+  position: absolute;
+  bottom: 6.3%;
+  right: 4%;
+  color: #fff;
+}
+#card4 {
+  display: grid;
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  top: 7vh;
+  right: 8vw;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card4 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p10 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p11 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p12 {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn4 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git4 {
+  position: absolute;
+  bottom: 5%;
+  right: 4%;
+  color: #fff;
+}
+
+/* Slide 2 */
+
+#two {
+  position: absolute;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*card 5*/
+#card5 {
+  position: absolute;
+  display: grid;
+  width: 30vw;
+  height: 35vh;
+  top: 7vh;
+  left: 15%;
+  top: 7vh;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card5 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p13 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p14 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p15 {
+  position: absolute;
+  bottom: 20%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn5 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git5 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+/* card6 */
+#card6 {
+  position: absolute;
+  display: grid;
+  width: 30vw;
+  height: 35vh;
+  top: 7vh;
+  right: 9%;
+  top: 7vh;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card6 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p16 {
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p17 {
+  position: absolute;
+  top: 8%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p18 {
+  position: absolute;
+  bottom: 16%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn6 {
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git6 {
+  position: absolute;
+  bottom: 3%;
+  right: 4%;
+  color: #fff;
+}
+
+/* card 7 */
+
+#card7 {
+  position: absolute;
+  display: grid;
+  bottom: 10vh;
+  right: 9vw;
+  width: 30vw;
+  height: 35vh;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card7 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p19 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p20 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p21 {
+  position: absolute;
+  bottom: 24%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn7 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git7 {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  color: #fff;
+}
+/* Card 8 */
+
+#card8 {
+  position: absolute;
+  display: grid;
+  bottom: 10vh;
+  left: 15vw;
+  width: 30vw;
+  height: 35vh;
+  background-color: #9d5c7e;
+  border: 10px solid lightcyan;
+}
+#card8 > h1 {
+  justify-self: center;
+  font-size: calc(14px + 0.5em);
+  color: #fff;
+}
+#p22 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p23 {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  font-size: calc(14px + 0.2em);
+  text-decoration: underline;
+  color: #fff;
+}
+#p24 {
+  position: absolute;
+  bottom: 28%;
+  padding: 0 1.2em;
+  color: #fff;
+}
+#btn8 {
+  position: absolute;
+  bottom: 7%;
+  left: 4%;
+  height: 5vh;
+  width: 9vw;
+  font-size: calc(14px + 0.2em);
+  text-decoration: none;
+  color: #fff;
+}
+#git8 {
+  position: absolute;
+  bottom: 13%;
+  right: 4%;
+  color: #fff;
+}
+
+/* Footer */
+
+footer > p {
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+  color: #fff;
+  display: flixed;
+}
+.extra {
+  position: absolute;
+  right: -50vw;
+  display: none;
+  cursor: pointer;
+}
+
+footer > p:hover .extra {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .socialMedia {
+    left: 2%;
+    top: 2%;
+  }
+  .navL {
+    padding: 0 1.5em;
+    font-size: calc(12px + 0.1em);
+  }
+  #hP {
+    left: 50vw;
+    top: 5.2vh;
+    font-size: calc(20px + 1em);
+  }
+  #hR {
+    position: absolute;
+    left: 50vw;
+    top: 16vh;
+    font-size: calc(20px + 1em);
+  }
+  #hO {
+    left: 50vw;
+    top: 26vh;
+    font-size: calc(20px + 1em);
+  }
+  #hJ {
+    left: 51vw;
+    top: 36vh;
+    font-size: calc(20px + 1em);
+  }
+  #hE {
+    left: 50vw;
+    top: 46vh;
+    font-size: calc(20px + 1em);
+  }
+  #hC {
+    left: 50vw;
+    top: 56vh;
+    font-size: calc(20px + 1em);
+  }
+  #hT {
+    left: 50vw;
+    top: 66vh;
+    font-size: calc(20px + 1em);
+  }
+  #hS {
+    left: 50vw;
+    top: 76vh;
+    font-size: calc(20px + 1em);
+  }
+  #card1 {
+    border: 5px solid lightcyan;
+  }
+  #card1 > h1 {
+    justify-self: center;
+    font-size: calc(6px + 0.5em);
+  }
+  #p1 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p2 {
+    top: 24%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p3 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.2em);
+  }
+  #btn1 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #git {
+    position: absolute;
+    bottom: -20%;
+    right: 20%;
+    font-size: calc(6px + 0.2em);
+  }
+  #card2 {
+    border: 5px solid lightcyan;
+  }
+  #card2 > h1 {
+    font-size: calc(6px + 0.5em);
+  }
+  #p4 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p5 {
+    top: 24%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p6 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.2em);
+  }
+  #btn2 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #git2 {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(6px + 0.2em);
+  }
+  #card3 {
+    border: 5px solid lightcyan;
+  }
+  #card3 > h1 {
+    font-size: calc(6px + 0.5em);
+  }
+  #p7 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p8 {
+    top: 24%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p9 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.2em);
+  }
+  #btn3 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #git3 {
+    bottom: 9%;
+    right: 6%;
+    font-size: calc(6px + 0.2em);
+  }
+  #card4 {
+    border: 5px solid lightcyan;
+  }
+  #card4 > h1 {
+    font-size: calc(6px + 0.5em);
+  }
+  #p10 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p11 {
+    top: 24%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p12 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.2em);
+  }
+  #btn4 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #git4 {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(6px + 0.2em);
+  }
+  #card5 {
+    border: 5px solid lightcyan;
+  }
+  #card5 > h1 {
+    justify-self: center;
+    font-size: calc(6px + 0.5em);
+  }
+  #p13 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p14 {
+    top: 20%;
+    right: 4%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p15 {
+    bottom: 25%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.2em);
+  }
+  #btn5 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #git5 {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(6px + 0.2em);
+  }
+  #card6 {
+    border: 5px solid lightcyan;
+  }
+  #card6 > h1 {
+    font-size: calc(6px + 0.5em);
+  }
+  #p16 {
+    top: 16%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p17 {
+    top: 16%;
+    right: 6%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p18 {
+    bottom: 8%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.2em);
+  }
+  #btn6 {
+    bottom: -5%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #git6 {
+    bottom: 1%;
+    right: 6%;
+    font-size: calc(6px + 0.2em);
+  }
+  #card7 {
+    border: 5px solid lightcyan;
+  }
+  #card7 > h1 {
+    font-size: calc(6px + 0.5em);
+  }
+  #p19 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p20 {
+    top: 24%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p21 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.2em);
+  }
+  #btn7 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #git7 {
+    bottom: 9%;
+    right: 5%;
+    font-size: calc(6px + 0.2em);
+  }
+  #card8 {
+    border: 5px solid lightcyan;
+  }
+  #card8 > h1 {
+    justify-self: center;
+    font-size: calc(6px + 0.5em);
+  }
+  #p22 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p23 {
+    top: 24%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #p24 {
+    bottom: 30%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.2em);
+  }
+  #btn8 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(6px + 0.2em);
+  }
+  #git8 {
+    bottom: 11.5%;
+    right: 6%;
+    font-size: calc(6px + 0.2em);
+  }
+}
+
+@media only screen and (min-width: 570px) and (max-width: 744px) {
+  .socialMedia {
+    left: 2%;
+  }
+  .navL {
+    padding: 0 1.5em;
+    font-size: calc(14px + 0.1em);
+  }
+  #hP {
+    left: 50vw;
+    top: 5.2vh;
+    font-size: calc(20px + 1em);
+  }
+  #hR {
+    position: absolute;
+    left: 50vw;
+    top: 16vh;
+    font-size: calc(20px + 1em);
+  }
+  #hO {
+    left: 50vw;
+    top: 26vh;
+    font-size: calc(20px + 1em);
+  }
+  #hJ {
+    left: 51vw;
+    top: 36vh;
+    font-size: calc(20px + 1em);
+  }
+  #hE {
+    left: 50vw;
+    top: 46vh;
+    font-size: calc(20px + 1em);
+  }
+  #hC {
+    left: 50vw;
+    top: 56vh;
+    font-size: calc(20px + 1em);
+  }
+  #hT {
+    left: 50vw;
+    top: 66vh;
+    font-size: calc(20px + 1em);
+  }
+  #hS {
+    left: 50vw;
+    top: 76vh;
+    font-size: calc(20px + 1em);
+  }
+  #card1 {
+    border: 7px solid lightcyan;
+  }
+  #card1 > h1 {
+    font-size: calc(7px + 0.5em);
+  }
+  #p1 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p2 {
+    top: 25%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p3 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.25em);
+  }
+  #btn1 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(7px + 0.25em);
+  }
+  #git {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(7px + 0.25em);
+  }
+  #card2 {
+    border: 7px solid lightcyan;
+  }
+  #card2 > h1 {
+    font-size: calc(7px + 0.5em);
+  }
+  #p4 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p5 {
+    top: 25%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p6 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.25em);
+  }
+  #btn2 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(7px + 0.25em);
+  }
+  #git2 {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(7px + 0.25em);
+  }
+  #card3 {
+    border: 7px solid lightcyan;
+  }
+  #card3 > h1 {
+    font-size: calc(7px + 0.5em);
+  }
+  #p7 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p8 {
+    top: 25%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p9 {
+    bottom: 23%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.25em);
+  }
+  #btn3 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(7px + 0.25em);
+  }
+  #git3 {
+    bottom: 9%;
+    right: 6%;
+    font-size: calc(7px + 0.25em);
+  }
+  #card4 {
+    border: 7px solid lightcyan;
+  }
+  #card4 > h1 {
+    font-size: calc(7px + 0.5em);
+  }
+  #p10 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p11 {
+    top: 24%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p12 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.25em);
+  }
+  #btn4 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(7px + 0.25em);
+  }
+  #git4 {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(7px + 0.25em);
+  }
+  #card5 {
+    border: 7px solid lightcyan;
+  }
+  #card5 > h1 {
+    font-size: calc(7px + 0.5em);
+  }
+  #p13 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p14 {
+    top: 20%;
+    right: 4%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p15 {
+    bottom: 25%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.25em);
+  }
+  #btn5 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(7px + 0.25em);
+  }
+  #git5 {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(7px + 0.25em);
+  }
+  #card6 {
+    border: 7px solid lightcyan;
+  }
+  #card6 > h1 {
+    font-size: calc(7px + 0.5em);
+  }
+  #p16 {
+    top: 16%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p17 {
+    top: 16%;
+    right: 6%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p18 {
+    bottom: 15%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.25em);
+  }
+  #btn6 {
+    bottom: -5%;
+    left: 7%;
+    font-size: calc(7px + 0.25em);
+  }
+  #git6 {
+    bottom: 1%;
+    right: 6%;
+    font-size: calc(7px + 0.25em);
+  }
+  #card7 {
+    border: 7px solid lightcyan;
+  }
+  #card7 > h1 {
+    font-size: calc(7px + 0.5em);
+  }
+  #p19 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p20 {
+    top: 25%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p21 {
+    bottom: 20%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.25em);
+  }
+  #btn7 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(7px + 0.25em);
+  }
+  #git7 {
+    bottom: 9%;
+    right: 5%;
+    font-size: calc(7px + 0.25em);
+  }
+  #card8 {
+    border: 7px solid lightcyan;
+  }
+  #card8 > h1 {
+    justify-self: center;
+    font-size: calc(7px + 0.5em);
+  }
+  #p22 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p23 {
+    top: 25%;
+    left: 7%;
+    font-size: calc(7px + 0.2em);
+  }
+  #p24 {
+    bottom: 30%;
+    padding: 0 1.2em;
+    font-size: calc(7px + 0.25em);
+  }
+  #btn8 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(7px + 0.25em);
+  }
+  #git8 {
+    bottom: 11.5%;
+    right: 6%;
+    font-size: calc(7px + 0.25em);
+  }
+}
+@media only screen and (min-width: 745px) and (max-width: 1024px) {
+  .socialMedia {
+    left: 2%;
+  }
+  .navL {
+    padding: 0 1.5em;
+    font-size: calc(13px + 0.1em);
+  }
+  #card1 {
+    border: 8px solid lightcyan;
+  }
+  #card1 > h1 {
+    font-size: calc(10px + 0.5em);
+  }
+  #p1 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p2 {
+    top: 26%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p3 {
+    bottom: 24%;
+    padding: 0 1.5em;
+    font-size: calc(8px + 0.25em);
+  }
+  #btn1 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(8px + 0.25em);
+  }
+  #git {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(8px + 0.25em);
+  }
+  #card2 {
+    border: 8px solid lightcyan;
+  }
+  #card2 > h1 {
+    font-size: calc(8px + 0.5em);
+  }
+  #p4 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p5 {
+    top: 26%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p6 {
+    bottom: 20%;
+    padding: 0 1.5em;
+    font-size: calc(8px + 0.25em);
+  }
+  #btn2 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(8px + 0.25em);
+  }
+  #git2 {
+    bottom: 8%;
+    right: 6%;
+    font-size: calc(8px + 0.25em);
+  }
+  #card3 {
+    border: 8px solid lightcyan;
+  }
+  #card3 > h1 {
+    font-size: calc(8px + 0.5em);
+  }
+  #p7 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p8 {
+    top: 26%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p9 {
+    bottom: 23%;
+    padding: 0 1.7em;
+    font-size: calc(8px + 0.25em);
+  }
+  #btn3 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(8px + 0.25em);
+  }
+  #git3 {
+    bottom: 7%;
+    right: 6%;
+    font-size: calc(8px + 0.25em);
+  }
+  #card4 {
+    border: 7px solid lightcyan;
+  }
+  #card4 > h1 {
+    font-size: calc(8px + 0.5em);
+  }
+  #p10 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p11 {
+    top: 26%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p12 {
+    bottom: 20%;
+    padding: 0 1.7em;
+    font-size: calc(8px + 0.25em);
+  }
+  #btn4 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(8px + 0.25em);
+  }
+  #git4 {
+    bottom: 6%;
+    right: 6%;
+    font-size: calc(8px + 0.25em);
+  }
+  #card5 {
+    border: 8px solid lightcyan;
+  }
+  #card5 > h1 {
+    font-size: calc(8px + 0.5em);
+  }
+  #p13 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p14 {
+    top: 20%;
+    right: 4%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p15 {
+    bottom: 26%;
+    padding: 0 1.5em;
+    font-size: calc(8px + 0.25em);
+  }
+  #btn5 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(8px + 0.25em);
+  }
+  #git5 {
+    bottom: 5%;
+    right: 6%;
+    font-size: calc(8px + 0.25em);
+  }
+  #card6 {
+    border: 8px solid lightcyan;
+  }
+  #card6 > h1 {
+    font-size: calc(8px + 0.5em);
+  }
+  #p16 {
+    top: 16%;
+    left: 6%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p17 {
+    top: 16%;
+    right: 6%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p18 {
+    bottom: 20%;
+    padding: 0 1.5em;
+    font-size: calc(8px + 0.25em);
+  }
+  #btn6 {
+    bottom: -2%;
+    left: 6%;
+    font-size: calc(8px + 0.25em);
+  }
+  #git6 {
+    bottom: 1%;
+    right: 6%;
+    font-size: calc(8px + 0.25em);
+  }
+  #card7 {
+    border: 8px solid lightcyan;
+  }
+  #card7 > h1 {
+    font-size: calc(8px + 0.5em);
+  }
+  #p19 {
+    top: 20%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p20 {
+    top: 26%;
+    left: 7%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p21 {
+    bottom: 20%;
+    padding: 0 1.7em;
+    font-size: calc(8px + 0.25em);
+  }
+  #btn7 {
+    bottom: 3%;
+    left: 7.5%;
+    font-size: calc(8px + 0.25em);
+  }
+  #git7 {
+    bottom: 7%;
+    right: 5%;
+    font-size: calc(8px + 0.25em);
+  }
+  #card8 {
+    border: 8px solid lightcyan;
+  }
+  #card8 > h1 {
+    font-size: calc(8px + 0.5em);
+  }
+  #p22 {
+    top: 20%;
+    left: 6.5%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p23 {
+    top: 26%;
+    left: 6.5%;
+    font-size: calc(8px + 0.2em);
+  }
+  #p24 {
+    bottom: 30%;
+    padding: 0 1.5em;
+    font-size: calc(8px + 0.25em);
+  }
+  #btn8 {
+    bottom: 3%;
+    left: 7%;
+    font-size: calc(8px + 0.25em);
+  }
+  #git8 {
+    bottom: 11%;
+    right: 6%;
+    font-size: calc(8px + 0.25em);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .socialMedia {
+    left: 2%;
+  }
+  #p1 {
+    left: 5%;
+  }
+  #p2 {
+    right: 6%;
+  }
+  #p3 {
+    bottom: 18%;
+  }
+  #btn1 {
+    left: 5%;
+  }
+  #git {
+    bottom: 3%;
+    right: 6%;
+  }
+
+  #p4 {
+    top: 16%;
+    left: 5%;
+  }
+  #p5 {
+    top: 16%;
+    right: 6%;
+  }
+  #p6 {
+    position: absolute;
+    bottom: 22%;
+    padding: 0 1.2em;
+    color: #fff;
+  }
+  #btn2 {
+    left: 5%;
+  }
+  #git2 {
+    bottom: 6%;
+    right: 6%;
+  }
+  /* card3 */
+
+  #p7 {
+    top: 16%;
+    left: 5%;
+  }
+  #p8 {
+    top: 16%;
+    right: 6%;
+  }
+  #p9 {
+    position: absolute;
+    bottom: 22%;
+  }
+  #btn3 {
+    left: 5%;
+  }
+  #git3 {
+    position: absolute;
+    bottom: 7%;
+    right: 6%;
+  }
+  #p10 {
+    top: 14%;
+    left: 5%;
+  }
+  #p11 {
+    top: 14%;
+    right: 6%;
+  }
+  #p12 {
+    bottom: 16%;
+  }
+  #btn4 {
+    bottom: 4%;
+    left: 5%;
+  }
+  #git4 {
+    bottom: 4%;
+    right: 4%;
+  }
+
+  #p13 {
+    left: 5%;
+  }
+  #p14 {
+    right: 6%;
+  }
+  #btn5 {
+    left: 5%;
+  }
+  #git5 {
+    right: 6%;
+    bottom: 7%;
+  }
+  #p16 {
+    left: 5%;
+  }
+  #p17 {
+    right: 6%;
+  }
+  #p18 {
+    bottom: 10%;
+  }
+  #btn6 {
+    bottom: -1%;
+    left: 5%;
+  }
+  #git6 {
+    bottom: -1%;
+    right: 6%;
+  }
+
+  #p19 {
+    top: 16%;
+    left: 5%;
+  }
+  #p20 {
+    position: absolute;
+    top: 16%;
+    right: 5%;
+  }
+  #p21 {
+    bottom: 22%;
+  }
+  #btn7 {
+    left: 6%;
+  }
+  #git7 {
+    right: 6%;
+  }
+  #p22 {
+    left: 5%;
+  }
+  #p23 {
+    right: 6%;
+  }
+  #btn8 {
+    left: 6%;
+  }
+  #git8 {
+    right: 6%;
+    bottom: 12%;
+  }
+}

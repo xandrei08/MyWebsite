@@ -1,0 +1,553 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Fira Sans", sans-serif;
+  background: rgb(84, 71, 71);
+  background: radial-gradient(
+    circle,
+    rgba(84, 71, 71, 1) 0%,
+    rgba(8, 0, 0, 1) 100%
+  );
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+.socialMedia {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  font-size: calc(20px + 0.5em);
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+.socialMedia a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navC {
+  position: fixed;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  left: 2.5%;
+  bottom: 5vh;
+}
+.navL {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1.5em;
+  font-size: calc(16px + 0.1em);
+  font-weight: 600;
+}
+a.navL:hover {
+  transform: translateY(-12%);
+  transition: all 0.4s ease-in-out;
+}
+.counterHeader {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  margin: 0;
+  color: #fff;
+  font-size: calc(16px + 4vw);
+  opacity: 0;
+}
+#h2 {
+  padding: 0;
+  margin-top: 10vh;
+  margin-left: 8.6vw;
+  opacity: 0;
+  color: #fff;
+  font-size: calc(15px + 1vw);
+  transition: all 0.4s ease-in-out;
+}
+#pFirst {
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding: 0 1.5em;
+  font-size: calc(16px + 0.5em);
+  line-height: 4vh;
+  width: 40vw;
+  margin-left: 12%;
+  opacity: 0;
+}
+#pSecond {
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding: 0 1.5em;
+  font-size: calc(16px + 0.5em);
+  line-height: 4vh;
+  width: 40vw;
+  margin-left: 12%;
+  opacity: 0;
+}
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rightWrapper {
+  padding: 0 2vw;
+  height: 100vh;
+  background-color: #fff;
+  transform: translateY(100%);
+}
+
+.subtitle {
+  opacity: 0;
+  position: absolute;
+  top: 4.5vh;
+  left: 41%;
+  font-weight: 600;
+  font-size: calc(24px + 0.5em);
+}
+.desc {
+  display: grid;
+  position: absolute;
+  bottom: 26vh;
+  width: 45.5vw;
+  height: 13vh;
+  font-size: calc(16px + 0.5em);
+  font-weight: 600;
+  opacity: 0;
+}
+
+/* Paragraphs of left side */
+
+/* right side Skills */
+
+.skill {
+  display: grid;
+  left: 0vw;
+  width: 10vw;
+  height: 40vh;
+  position: absolute;
+  top: 15vh;
+  font-weight: 600;
+  font-size: calc(14px + 0.4em);
+  opacity: 0;
+}
+
+.skillsCC {
+  display: grid;
+  position: absolute;
+  bottom: 2.9vh;
+  right: 19.5vw;
+  width: 12vw;
+  height: 23.5vh;
+  font-size: calc(14px + 0.4em);
+  line-height: 4vh;
+  opacity: 0;
+}
+#skillsC {
+  opacity: 1;
+  font-weight: 600;
+}
+
+#boxes {
+  display: grid;
+  font-weight: 600;
+  width: 12vw;
+  position: absolute;
+  top: 15.5vh;
+  right: 3vw;
+  font-size: calc(14px + 0.4em);
+  line-height: 2.5em;
+}
+/*Boxes */
+.box1 {
+  opacity: 0;
+}
+.box2 {
+  opacity: 0;
+}
+.box3 {
+  opacity: 0;
+}
+.box4 {
+  opacity: 0;
+}
+.box5 {
+  opacity: 0;
+}
+
+/* Footer */
+
+footer > p {
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+.extra {
+  position: absolute;
+  right: -50vw;
+  display: none;
+  cursor: pointer;
+  mix-blend-mode: difference;
+}
+
+footer > p:hover .extra {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .socialMedia {
+    right: 2%;
+    top: 1%;
+    font-size: calc(10px + 0.5em);
+  }
+
+  .navL {
+    font-size: calc(10px + 0.1em);
+  }
+  .counterHeader {
+    font-size: calc(10px + 4vw);
+  }
+
+  #h2 {
+    margin-top: 5vh;
+    margin-left: 12vw;
+    font-size: calc(13px + 0.1em);
+  }
+
+  /* Paragraphs of left side */
+
+  #pFirst {
+    height: 20vh;
+    padding: 0 1em;
+    font-size: calc(14px + 0.1em);
+    line-height: 2.1vh;
+    width: 40vw;
+    margin-left: 12%;
+  }
+  #pSecond {
+    height: 30vh;
+    padding: 0 0.7em;
+    font-size: calc(14px + 0.1em);
+    line-height: 2.1vh;
+    width: 40vw;
+    margin-left: 12%;
+    margin-top: 80%;
+  }
+  /* right side Skills */
+  .subtitle {
+    top: 4.5vh;
+    font-size: calc(10px + 0.5em);
+  }
+
+  .skill {
+    left: -5vw;
+    width: 10vw;
+    height: 40vh;
+    top: 15vh;
+    font-size: calc(6px + 0.4em);
+  }
+  .desc {
+    bottom: 35vh;
+    width: 45.5vw;
+    height: 5vh;
+    font-size: calc(8px + 0.3em);
+  }
+  .skillsCC {
+    bottom: 10vh;
+    right: 19.5vw;
+    width: 12vw;
+    height: 14vh;
+    font-size: calc(10px + 0.2em);
+    line-height: 3vh;
+    bottom: 10vh;
+  }
+
+  #boxes {
+    top: 12vh;
+    right: 3vw;
+    line-height: 1.2em;
+  }
+  /*Boxes */
+  .box1 {
+    font-size: calc(6px + 0.4em);
+  }
+  .box2 {
+    font-size: calc(6px + 0.4em);
+  }
+  .box3 {
+    font-size: calc(6px + 0.4em);
+  }
+  .box4 {
+    font-size: calc(6px + 0.4em);
+  }
+  .box5 {
+    font-size: calc(6px + 0.4em);
+  }
+
+  /* Footer */
+
+  footer > p {
+    font-size: calc(8px + 0.2em);
+  }
+  .extra {
+    font-size: calc(8px + 0.2em);
+    position: absolute;
+    right: -60vw;
+    display: none;
+    cursor: pointer;
+    mix-blend-mode: difference;
+  }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 744px) {
+  .socialMedia {
+    right: 2%;
+    top: 1%;
+    font-size: calc(10px + 0.5em);
+  }
+
+  .navL {
+    font-size: calc(12px + 0.1em);
+  }
+  .counterHeader {
+    font-size: calc(10px + 4vw);
+  }
+
+  #h2 {
+    margin-top: 5vh;
+    margin-left: 8vw;
+    font-size: calc(20px + 0.1em);
+  }
+
+  /* Paragraphs of left side */
+
+  #pFirst {
+    height: 20vh;
+    padding: 0 1em;
+    font-size: calc(14px + 0.1em);
+    line-height: 2.1vh;
+    width: 40vw;
+    margin-left: 12%;
+  }
+  #pSecond {
+    height: 30vh;
+    padding: 0 0.7em;
+    font-size: calc(14px + 0.1em);
+    line-height: 2.1vh;
+    width: 40vw;
+    margin-left: 12%;
+    margin-top: 80%;
+  }
+  /* right side Skills */
+  .subtitle {
+    top: 4.5vh;
+    font-size: calc(10px + 0.5em);
+  }
+
+  .skill {
+    left: -5vw;
+    width: 10vw;
+    height: 40vh;
+    top: 15vh;
+    font-size: calc(6px + 0.4em);
+  }
+  .desc {
+    bottom: 35vh;
+    width: 45.5vw;
+    height: 5vh;
+    font-size: calc(8px + 0.3em);
+  }
+  .skillsCC {
+    bottom: 10vh;
+    right: 19.5vw;
+    width: 12vw;
+    height: 14vh;
+    font-size: calc(10px + 0.2em);
+    line-height: 3vh;
+    bottom: 10vh;
+  }
+
+  #boxes {
+    top: 12vh;
+    right: 3vw;
+    line-height: 1.2em;
+  }
+  /*Boxes */
+  .box1 {
+    font-size: calc(6px + 0.4em);
+  }
+  .box2 {
+    font-size: calc(6px + 0.4em);
+  }
+  .box3 {
+    font-size: calc(6px + 0.4em);
+  }
+  .box4 {
+    font-size: calc(6px + 0.4em);
+  }
+  .box5 {
+    font-size: calc(6px + 0.4em);
+  }
+
+  /* Footer */
+
+  footer > p {
+    font-size: calc(8px + 0.2em);
+  }
+  .extra {
+    font-size: calc(8px + 0.2em);
+    right: -60vw;
+  }
+}
+@media only screen and (min-width: 745px) and (max-width: 1024px) {
+  .navL {
+    font-size: calc(12px + 0.1em);
+  }
+  #h2 {
+    margin-top: 10vh;
+    margin-left: 9vw;
+    font-size: calc(13px + 1vw);
+  }
+  #pFirst {
+    font-size: calc(12px + 0.5em);
+  }
+  #pSecond {
+    font-size: calc(12px + 0.5em);
+    margin-top: 20%;
+  }
+  .subtitle {
+    top: 4.5vh;
+    font-size: calc(20px + 0.5em);
+  }
+
+  .skill {
+    left: -2vw;
+    width: 10vw;
+    height: 40vh;
+    top: 15vh;
+    font-size: calc(12px + 0.4em);
+  }
+  .desc {
+    bottom: 35vh;
+    width: 45.5vw;
+    height: 5vh;
+    font-size: calc(12px + 0.4em);
+  }
+  .skillsCC {
+    bottom: 10vh;
+    right: 19.5vw;
+    width: 12vw;
+    height: 14vh;
+    font-size: calc(12px + 0.4em);
+    line-height: 4vh;
+    bottom: 15vh;
+  }
+
+  #boxes {
+    top: 12vh;
+    right: 3vw;
+    line-height: 1.7em;
+  }
+  /*Boxes */
+  .box1 {
+    font-size: calc(8px + 0.4em);
+  }
+  .box2 {
+    font-size: calc(8px + 0.4em);
+  }
+  .box3 {
+    font-size: calc(8px + 0.4em);
+  }
+  .box4 {
+    font-size: calc(8px + 0.4em);
+  }
+  .box5 {
+    font-size: calc(8px + 0.4em);
+  }
+
+  footer > p {
+    font-size: calc(10px + 0.2em);
+  }
+  .extra {
+    font-size: calc(10px + 0.2em);
+    right: -45vw;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .navL {
+    font-size: calc(15px + 0.1em);
+  }
+  #h2 {
+    margin-top: 10vh;
+    margin-left: 8.2vw;
+    font-size: calc(15px + 1vw);
+  }
+  #pFirst {
+    font-size: calc(15px + 0.5em);
+  }
+  #pSecond {
+    font-size: calc(15px + 0.5em);
+    margin-top: 10d%;
+  }
+  .subtitle {
+    top: 2.5vh;
+    font-size: calc(30px + 0.5em);
+  }
+
+  .skill {
+    left: -1vw;
+    width: 10vw;
+    height: 30vh;
+    top: 15vh;
+    font-size: calc(15px + 0.4em);
+  }
+  .desc {
+    bottom: 39vh;
+    width: 45.5vw;
+    height: 5vh;
+    font-size: calc(15px + 0.4em);
+  }
+  .skillsCC {
+    height: 20vh;
+    font-size: calc(13px + 0.4em);
+    bottom: 15vh;
+    line-height: 6vh;
+  }
+
+  #boxes {
+    top: 12vh;
+    right: 3vw;
+    line-height: 1.9em;
+  }
+  /*Boxes */
+  .box1 {
+    font-size: calc(10px + 0.4em);
+  }
+  .box2 {
+    font-size: calc(10px + 0.4em);
+  }
+  .box3 {
+    font-size: calc(10px + 0.4em);
+  }
+  .box4 {
+    font-size: calc(10px + 0.4em);
+  }
+  .box5 {
+    font-size: calc(10px + 0.4em);
+  }
+
+  footer > p {
+    font-size: calc(14px + 0.2em);
+  }
+  .extra {
+    font-size: calc(14px + 0.2em);
+    right: -45vw;
+  }
+}
